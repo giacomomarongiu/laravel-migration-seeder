@@ -48,3 +48,26 @@ Nel caso volessi fare l'operazione inversa:
 
 Mi permette di "revocare" la migration con il valore di batch più alto
 
+Nel caso volessi aggiungere una colonna
+- php arstisan make:migration add_NOME_to_trains_table
+
+Nel caso volessi aggiungere più di una colonna
+- php artisan make:migration update_trains_table --table=trains (da rivedere)
+
+Devo aggiungere degli elementi alla mia tabella, ci sono due possibilità:
+1) Su phpmyadmin
+2) Da linea di comando con: 
+- php artisan ti
+
+Per usare ti prima di tutto mi occorre creare una Model in grado di immagazzinare le info:
+php artisan make:model Train
+
+- php artisan ti
+- $train = new App\Models\Train
+- $train->enterprise = "Italo"
+- $train->enterprise = "Italica Treni"
+- ecc...
+Se voglio inserie un'altra riga:
+- $train = new App\Models\Train
+Per uscire 
+- exit
