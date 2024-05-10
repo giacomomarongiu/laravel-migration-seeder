@@ -18,4 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/', [TrainsController::class, 'index'])->name('guests.trains.index');
-Route::get('/{train}', [TrainsController::class, 'show'])->name('guests.train.index');
+Route::get('/{train}', [TrainsController::class, 'show'])->name('guests.train.single');
