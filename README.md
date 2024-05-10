@@ -33,3 +33,18 @@ Faccio la prima migration con le "table" di default su Laravel
 
 Creo la mia tabella trains come da esercizio
 - php artisan make:migration create_trains_table
+
+Aggiungo le colonne della mia tabella nel file appena creato in migrations
+
+- php artisan migrate per caricare la tabella nel db
+
+
+Oltre alle 4 tabelle di default (e la mia appena caricata) c'è la tabella migrations. Questa tabella:
+1) tiene traccia delle migration caricate nel db 
+2) Assegna un valore incrementale chiamato batch
+
+Nel caso volessi fare l'operazione inversa:
+- php artisan migrate:rollback
+
+Mi permette di "revocare" la migration con il valore di batch più alto
+
