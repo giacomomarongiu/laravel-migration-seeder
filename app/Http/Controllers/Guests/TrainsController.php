@@ -23,7 +23,8 @@ class TrainsController extends Controller
      */
     public function show(Train $train)
     {
-        dd($train);
+        //dd($train);
+        return view('single', compact('train'));
     }
 
 }
