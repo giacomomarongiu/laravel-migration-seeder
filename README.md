@@ -71,3 +71,12 @@ Se voglio inserie un'altra riga:
 - $train = new App\Models\Train
 Per uscire 
 - exit
+
+Per gestire gli elementi mi serve un Controller
+- php artisan make:controller Guests/TrainsController -m Train
+
+Nel mio controller avrò tutta una serie di metodi di default
+Li cancello e lascio solo index e show (per ora)
+
+Adesso posso creare le mie route
+E visualizzare il dd nel mio db con il Train Controller
