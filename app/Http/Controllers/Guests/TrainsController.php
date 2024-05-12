@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Guests;
 
 use App\Http\Controllers\Controller;
 use App\Models\Train;
-use Illuminate\Http\Request;
 
 class TrainsController extends Controller
 {
@@ -31,14 +30,6 @@ class TrainsController extends Controller
         return view('guests/welcome', compact('today_trains'));
     }
 
-    /**
-     * Display all trains.
-     */
-    public function allTrains()
-    {
-        $trains = Train::all();
-        return view('guests.alltrains', compact('trains'));
-    }
 
     /**
      * Display the specified resource.
@@ -49,5 +40,16 @@ class TrainsController extends Controller
         return view('guests/single', compact('train'));
     }
 
+
+    /**
+     * Display all trains.
+     */
+/*     public function all()
+    {
+
+        $trains = Train::all();
+        dd($trains);
+        return view('guests.alltrains', compact('trains'));
+    } */
 
 }

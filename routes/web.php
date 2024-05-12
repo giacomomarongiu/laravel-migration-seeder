@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Guests\TrainsController;
+use App\Http\Controllers\Guests\PagesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +16,6 @@ use App\Http\Controllers\Guests\TrainsController;
 
 
 
-Route::get('/trains', [TrainsController::class, 'allTrains'])->name('alltrains');
 Route::get('/', [TrainsController::class, 'index'])->name('index');
 Route::get('/{train}', [TrainsController::class, 'show'])->name('single');
+Route::get('/trains', [PagesController::class, 'index'])->name('alltrains');
