@@ -20,7 +20,7 @@ class TrainsController extends Controller
         //taking today date
         $today = now();
         //dd($today);
-        $today = $today-> toDateString();
+        $today = $today->toDateString();
         //dd($today);
 
         //trains filtered by today date
@@ -32,6 +32,15 @@ class TrainsController extends Controller
     }
 
     /**
+     * Display all trains.
+     */
+    public function allTrains()
+    {
+        $trains = Train::all();
+        return view('guests.alltrains', compact('trains'));
+    }
+
+    /**
      * Display the specified resource.
      */
     public function show(Train $train)
@@ -39,5 +48,6 @@ class TrainsController extends Controller
         //dd($train);
         return view('guests/single', compact('train'));
     }
+
 
 }
