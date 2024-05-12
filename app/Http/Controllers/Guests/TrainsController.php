@@ -37,19 +37,6 @@ class TrainsController extends Controller
     public function show(Train $train)
     {
         //dd($train);
-        return view('guests.single', compact('train'));
+        return view('guests/single', compact('train'));
     }
-
-
-    /**
-     * Display all trains.
-     */
-/*     public function all()
-    {
-
-        $trains = Train::all();
-        dd($trains);
-        return view('guests.alltrains', compact('trains'));
-    } */
-
 }

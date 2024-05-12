@@ -5,14 +5,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item " aria-current="page">
-                            <a class="nav-link {{ Route::currentRouteName() === '' ? 'active' : '' }}"  href="">Home</a>
+                            <a class="nav-link {{ Route::currentRouteName() === 'welcome' ? 'active' : '' }}"  href="{{ route('index') }}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link {{ Route::currentRouteName() === '' ? 'active' : '' }}"  href="">Tickets</a>
+                            <a class="nav-link {{ Route::currentRouteName() === 'alltrains' ? 'active' : '' }}"  href="{{ route('trains') }}">AllTrains</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">British</a>
-                        </li>
+
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
