@@ -4,7 +4,7 @@
     <main class="bg-danger bg-opacity-50 py-3">
         <div class="container bg-success  py-3">
             <div class="row g-2">
-                @foreach ($trains as $train)
+                @foreach ($today_trains as $train)
                     <div class="col-3">
                         <a href="{{ route('guests.train.single', $train) }}" style="text-decoration: none">
                             <div class="card border-0" style="width: 15rem;">
