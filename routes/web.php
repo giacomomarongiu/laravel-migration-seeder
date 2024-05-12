@@ -18,4 +18,4 @@ use App\Http\Controllers\Guests\PagesController;
 
 Route::get('/', [TrainsController::class, 'index'])->name('index');
 Route::get('/{train}', [TrainsController::class, 'show'])->name('single');
-Route::get('/trains', [PagesController::class, 'index'])->name('alltrains');
+//Route::get('/test', [PagesController::class, 'index'])->name('trains');

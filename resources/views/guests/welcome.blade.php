@@ -6,7 +6,7 @@
             <div class="row g-2">
                 @foreach ($today_trains as $train)
                     <div class="col-3">
-                        <a href="{{ route('guests.train.single', $train) }}" style="text-decoration: none">
+                        <a href="{{ route('single', $train) }}" style="text-decoration: none">
                             <div class="card border-0" style="width: 15rem;">
                                 <div class="card-header bg-danger bg-opacity-50">
                                     <h1 class="">{{ $train->enterprise }}</h1>

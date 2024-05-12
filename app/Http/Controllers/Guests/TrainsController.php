@@ -37,7 +37,7 @@ class TrainsController extends Controller
     public function show(Train $train)
     {
         //dd($train);
-        return view('guests/single', compact('train'));
+        return view('guests.single', compact('train'));
     }
 
 
