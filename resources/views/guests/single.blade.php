@@ -5,8 +5,8 @@
         <div class="container bg-success  py-3">
             <div class="row g-2">
 
-                <div class="col">
-                    <div class="card border-0" style="width: 15rem;">
+                <div class="col-6">
+                    <div class="card border-0" style="">
                         <div class="card-header bg-danger bg-opacity-50">
                             <h1 class="">{{ $train->enterprise }}</h1>
                             <h6>{{ $train->train_code }}</h4>

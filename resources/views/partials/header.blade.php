@@ -1,7 +1,7 @@
     <header>
         <nav class="navbar navbar-expand-lg  bg-danger">
             <div class="container  bg-success">
-                <a class="navbar-brand fw-bold text-light" href="#">BoolItalia</a>
+                <a class="navbar-brand fw-bold text-light" href="{{ route('home') }}">BoolItalia</a>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item " aria-current="page">
