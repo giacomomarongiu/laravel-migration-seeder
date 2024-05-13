@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Guests;
 
 use App\Http\Controllers\Controller;
 use App\Models\Train;
-
 class TrainsController extends Controller
 {
     /**
