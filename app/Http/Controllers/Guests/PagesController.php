@@ -13,6 +13,6 @@ class PagesController extends Controller
 
         $trains = Train::all();
         //dd($trains);
-        return view('guests.alltrains', compact('trains'));
+        return view('guests.welcome', compact('trains'));
     }
 }

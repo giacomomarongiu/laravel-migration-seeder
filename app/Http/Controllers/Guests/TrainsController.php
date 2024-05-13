@@ -23,10 +23,10 @@ class TrainsController extends Controller
 
         //trains filtered by today date
         // wheredate filters the results of my db in the column (1st parameter) with today's date (2nd)
-        $today_trains = Train::whereDate('departure_time', $today)->get();
+        $trains = Train::whereDate('departure_time', $today)->get();
         //dd($today_trains);
 
-        return view('guests/welcome', compact('today_trains'));
+        return view('guests/welcome', compact('trains'));
     }
 
 
