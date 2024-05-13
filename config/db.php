@@ -2,7 +2,7 @@
 
 
 return [
-    $trains = [
+    'trains' => [
         [
             'enterprise' => 'Italo',
             'departure_station' => 'Milano Centrale',
@@ -22,8 +22,8 @@ return [
             'arrival_time' =>'',
             'train_code' => 'A551',
             'carriages_number' => 9,
-            'is_in_time' => 1,
-            'is_deleted' => 0
+            'is_in_time' => 0,
+            'is_deleted' => 1
         ],
         [
             'enterprise' => 'Frecciarossa',
