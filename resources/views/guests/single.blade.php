@@ -2,8 +2,8 @@
 
 @section('content')
     <main class="bg-danger bg-opacity-50 py-3">
-        <div class="container bg-success  py-3">
-            <div class="row g-2">
+        <div class="container bg-success rounded py-3">
+            <div class="row g-3">
 
                 <div class="col-6">
                     <div class="card border-0" style="">

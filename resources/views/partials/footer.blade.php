@@ -1,5 +1,5 @@
-<footer class="  bg-danger">
-    <div class="container bg-success">
+<footer class="  bg-success">
+    <div class="container bg-success ">
         <footer class="py-5">
             <div class="row text-light">
                 <div class="col-6 col-md-2 mb-3">
@@ -39,7 +39,7 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
                 <p>© 2022 Company, Inc. All rights reserved.</p>
                 </ul>
             </div>

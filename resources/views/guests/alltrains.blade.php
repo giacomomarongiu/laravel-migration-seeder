@@ -2,12 +2,12 @@
 
 @section('content')
     <main class="bg-danger bg-opacity-50 py-3">
-        <div class="container bg-success  py-3">
-            <div class="row g-2">
+        <div class="container bg-success rounded py-3">
+            <div class="row g-3">
                 @foreach ($trains as $train)
-                    <div class="col-3">
+                    <div class="col-6">
                         <a href="{{ route('single', $train) }}" style="text-decoration: none">
-                            <div class="card border-0" style="width: 15rem;">
+                            <div class="card border-0" style="">
                                 <div class="card-header bg-danger bg-opacity-50">
                                     <h1 class="">{{ $train->enterprise }}</h1>
                                     <h6>{{ $train->train_code }}</h4>
